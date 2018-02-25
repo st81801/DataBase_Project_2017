@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="Shortcut Icon" type="image/x-icon" href="iconSu.ico" />
+    <meta charset="utf-8" />
+    <title>速糧館</title>
+    <style>
+ 
+        .logoSu {
+            width:360px;
+            height:320px;
+            position:relative;
+            top:-75px;
+            left:-20px;
+        }
+        .logoMcD {
+            width:300px;
+            height:350px;
+            position:relative;
+            top:100px;
+            left:120px;
+        }
+        .logoKFC{
+            width:450px;
+            height:300px;
+            position:relative;
+            top:-20px;
+            left:200px;
+        }
+        .logoMOS {
+            width:350px;
+            height:350px;
+            position:relative;
+            top:100px;
+            left:300px;
+        }
+        .upperdiv {
+            background-color:aquamarine;
+            height:170px;
+            position:center;
+        }
+        .goal {
+              position:relative;
+              top:-330px;  
+              left:550px;
+              color:crimson;
+              font-family:微軟正黑體;
+        }
+    </style>
+    <script>
+
+        function McDsetIn()
+        {
+            var McD = document.getElementById("McDLogo");
+            McD.setAttribute("src", "McDonaldLogo.jpg");
+        }
+        function McDsetOut()
+        {
+            var McD = document.getElementById("McDLogo");
+            McD.setAttribute("src", "McDonaldLogo2.jpg");
+        }
+        function KFCsetIn() {
+            var KFC = document.getElementById("KFCLogo");
+            KFC.setAttribute("src", "KFCLogo.jpg");
+        }
+        function KFCsetOut() {
+            var KFC = document.getElementById("KFCLogo");
+            KFC.setAttribute("src", "KFCLogo2.jpg");
+        }
+        function MOSsetIn() {
+            var MOS = document.getElementById("MOSLogo");
+            MOS.setAttribute("src", "MOSLogo.jpg");
+        }
+        function MOSsetOut() {
+            var MOS = document.getElementById("MOSLogo");
+            MOS.setAttribute("src", "MOSLogo2.jpg");
+        }
+    </script>
+</head>
+<body style="background-color:blanchedalmond">
+    <!--upper section-->
+    <div class="upperdiv">
+       
+        <a href=""><img src="logo.png" class="logoSu"/></a>
+        <h3 class="goal" align="left">速糧館希望客戶都能享受到最簡單的查詢，獲得最快速及最新的資訊!<br>速糧館也為您準備好最新最詳細的速糧菜單!<br>每一道都是您值得嘗試的美食佳餚!<br>從心動動的初戀滋味到渾厚老師傅的好味道都詳盡其中!<br>現在就讓速糧館帶您領略每家店的美好滋味吧!<br>----點擊以下圖片選擇店家---</h3>
+    </div>
+
+   
+    <!--lower section-->
+    <div style="position:center">
+        <marquee scrollamount="8" direction="left" align="center" height="30"  style="font-size:25px;font-family:微軟正黑體"><b style="color:brown">麥當勞的薯條</b>整顆馬鈴薯切條製作，使用安全植物油，安心又美味        <b style="color:brown">肯德基蛋塔</b>外酥內嫩，經典美味。炸雞酥又多汁，雞汁填滿口中             <b style="color:brown">摩斯漢堡</b>口味多樣，帶給你不一樣的新感受，每次都像發現新大陸</marquee>
+
+        <a href="McDItemPage.php"><img src="McDonaldLogo2.jpg" class="logoMcD" onmouseover="McDsetIn()" onmouseout="McDsetOut()"  id="McDLogo"/></a>
+        <a href="index.php"><img src="KFCLogo2.jpg" class="logoKFC" onmouseover="KFCsetIn()" onmouseout="KFCsetOut()"  id="KFCLogo"/></a>
+        <a href="MosPageDepartment.php"><img src="MOSLogo2.jpg" class="logoMOS" onmouseover="MOSsetIn()" onmouseout="MOSsetOut()"  id="MOSLogo"/></a>
+    </div>
+</body>
+</html>
